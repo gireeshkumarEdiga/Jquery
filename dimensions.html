@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        #div1 {
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <br>
+    
+    <button>Display dimensions of div</button>
+
+</body>
+</html>
+
+<script>
+
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         var txt = "";
+    //         txt += "width : " + $("#div1").width() + "</br>";
+    //         txt += "height : " + $("#div1").height();
+    //         $("#div1").html(txt);
+    //     });
+    // })
+
+
+    // $(document).ready(function(){
+    //     $("button").click(function(){
+    //         var txt = "";
+    //         txt += "width : " + $("#div1").width() + "</br>";
+    //         txt += "height : " + $("#div1").height()+ "</br>";
+    //         txt += "Inner width : " + $("#div1").innerWidth() + "</br>";
+    //         txt += "Inner height : " + $("#div1").innerWidth()+ "</br>";
+    //         $("#div1").html(txt);
+    //     });
+    // })
+
+
+    $(document).ready(function(){
+        $("button").click(function(){
+            var txt = "";
+            txt += "width : " + $("#div1").width() + "</br>";
+            txt += "height : " + $("#div1").height()+ "</br>";
+            txt += "Outer width : " + $("#div1").outerWidth() + "</br>";
+            txt += "Outer height : " + $("#div1").outerHeight()+ "</br>";
+            $("#div1").html(txt);
+        });
+    })
+
+
+</script>
